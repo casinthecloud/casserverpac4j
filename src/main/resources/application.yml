@@ -27,3 +27,5 @@ cas.authn.oauth.session-replication.cookie.crypto.encryption.key: ybPgaewBWROr1H
 
 cas.authn.saml-idp.core.entity-id: ${cas.server.name}/idp
 cas.authn.saml-idp.metadata.file-system.location: file:${saml.dir}
+
+cas.http-web-request.header.content-security-policy:
