@@ -3,5 +3,6 @@
   "serviceId" : "http://localhost:8081.*",
   "name" : "A SAML client SP",
   "id" : 3,
-  "metadataLocation" : "./samlsp/sp-metadata-8081.xml"
+  "metadataLocation" : "./samlsp/sp-metadata-8081.xml",
+  "logoutType": "FRONT_CHANNEL"
 }
