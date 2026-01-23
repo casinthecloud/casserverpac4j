@@ -7,7 +7,6 @@ import org.apereo.cas.authentication.AuthenticationHandlerExecutionResult;
 import org.apereo.cas.authentication.credential.UsernamePasswordCredential;
 import org.apereo.cas.authentication.handler.support.AbstractUsernamePasswordAuthenticationHandler;
 import org.apereo.cas.authentication.principal.PrincipalFactory;
-import org.apereo.cas.services.ServicesManager;
 
 import javax.security.auth.login.AccountNotFoundException;
 import java.util.ArrayList;
@@ -18,8 +17,8 @@ import java.util.List;
 @Slf4j
 public class StaticAuthenticationHandler extends AbstractUsernamePasswordAuthenticationHandler {
 
-    public StaticAuthenticationHandler(final ServicesManager servicesManager, final PrincipalFactory principalFactory) {
-        super("FakeAuthenticationHandler", servicesManager, principalFactory, 1);
+    public StaticAuthenticationHandler(final PrincipalFactory principalFactory) {
+        super("FakeAuthenticationHandler", principalFactory, 1);
     }
 
     @Override

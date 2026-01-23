@@ -4,25 +4,12 @@
 	<groupId>org.pac4j.demos</groupId>
 	<artifactId>casserverpac4j</artifactId>
 	<packaging>war</packaging>
-	<version>7.1.3-SNAPSHOT</version>
-
-    <repositories>
-        <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+	<version>7.3.3-SNAPSHOT</version>
 
 	<properties>
-		<cas.version>7.1.6</cas.version>
+		<cas.version>7.3.3</cas.version>
 		<java.version>21</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
@@ -70,7 +57,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.36</version>
+			<version>1.18.42</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
@@ -99,7 +86,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>3.3.3</version>
+				<version>3.5.6</version>
 				<configuration>
 					<mainClass>org.apereo.cas.web.CasWebApplication</mainClass>
 					<excludes>
