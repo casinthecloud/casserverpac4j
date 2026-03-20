@@ -1,1 +1,1 @@
-web: java -Dapp.domain=https://casserverpac4j.herokuapp.com -Dapp.port=$PORT -Dsaml.dir=./samlheroku -jar ./target/cas.war
+web: java -XX:+UseCompactObjectHeaders -XX:+UseSerialGC -Xmx380m -Xss512k -XX:MaxDirectMemorySize=64M -Dspring.jmx.enabled=false -Dapp.domain=https://casserverpac4j.herokuapp.com -Dapp.port=$PORT -Dsaml.dir=./samlheroku -jar ./target/cas.war
