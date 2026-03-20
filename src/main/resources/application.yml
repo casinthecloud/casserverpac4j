@@ -33,3 +33,5 @@ cas.http-web-request.header.content-security-policy:
 cas.http-client.allow-local-urls: true
 
 cas.monitor.endpoints.ignored-endpoints: /public/**
+
+cas.service-registry.schedule.enabled: false
