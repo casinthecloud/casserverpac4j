@@ -3,6 +3,6 @@
   "serviceId" : "http://cas-server:8080.*",
   "name" : "A SAML CAS server SP (cas-server:8080)",
   "id" : 5,
-  "metadataLocation" : "./samlsp/sp-metadata-8080-casserver.xml",
+  "metadataLocation" : "./src/main/resources/static/public/sp-metadata-8080-casserver.xml",
   "logoutType": "FRONT_CHANNEL"
 }
