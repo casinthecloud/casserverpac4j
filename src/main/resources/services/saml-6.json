@@ -1,0 +1,8 @@
+{
+  "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
+  "serviceId" : "http://localhost:8080/callback.*",
+  "name" : "A SAML SP (localhost:8080)",
+  "id" : 6,
+  "metadataLocation" : "./src/main/resources/static/public/sp-metadata-8080.xml",
+  "logoutType": "FRONT_CHANNEL"
+}
