@@ -1,10 +1,9 @@
 {
   "@class" : "org.apereo.cas.services.OidcRegisteredService",
-  "clientId": "myclient",
-  "clientSecret": "mysecret",
+  "clientId": "pkceclient",
   "serviceId" : "^https?://.*",
-  "name": "any OIDC RP",
-  "id": 2,
+  "name": "any OIDC PKCE client",
+  "id": 11,
   "bypassApprovalPrompt": true,
   "scopes" : [ "java.util.HashSet",
     [ "openid", "email", "profile" ]

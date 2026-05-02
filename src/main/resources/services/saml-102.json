@@ -2,7 +2,7 @@
   "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
   "serviceId" : "http://cas-server:8080/cas/.*",
   "name" : "A SAML CAS server SP (cas-server:8080)",
-  "id" : 5,
+  "id" : 102,
   "metadataLocation" : "./src/main/resources/static/public/sp-metadata-8080-casserver.xml",
   "logoutType": "FRONT_CHANNEL"
 }

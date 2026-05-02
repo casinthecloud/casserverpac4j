@@ -2,7 +2,7 @@
   "@class" : "org.apereo.cas.support.saml.services.SamlRegisteredService",
   "serviceId" : "http://localhost:8081.*",
   "name" : "A SAML client SP",
-  "id" : 3,
+  "id" : 100,
   "metadataLocation" : "./src/main/resources/static/public/sp-metadata-8081.xml",
   "logoutType": "FRONT_CHANNEL"
 }

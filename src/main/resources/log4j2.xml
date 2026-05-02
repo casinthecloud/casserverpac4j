@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- Specify the refresh internal in seconds. -->
-<Configuration monitorInterval="5" packages="org.apereo.cas.logging">
+<Configuration monitorInterval="5">
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d %p [%c] - &lt;%m&gt;%n"/>
