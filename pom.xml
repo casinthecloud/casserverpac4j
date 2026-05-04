@@ -4,11 +4,11 @@
 	<groupId>org.pac4j.demos</groupId>
 	<artifactId>casserverpac4j</artifactId>
 	<packaging>war</packaging>
-	<version>7.3.6-SNAPSHOT</version>
+	<version>8.0.0-SNAPSHOT</version>
 
 	<properties>
-		<cas.version>7.3.6</cas.version>
-		<java.version>21</java.version>
+		<cas.version>8.0.0-RC4</cas.version>
+		<java.version>25</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <lombok.version>1.18.44</lombok.version>
 	</properties>
@@ -87,9 +87,6 @@
 						<overlay>
 							<groupId>org.apereo.cas</groupId>
 							<artifactId>cas-server-webapp-tomcat</artifactId>
-                            <excludes>
-                                <exclude>WEB-INF/lib/commons-logging-*.jar</exclude>
-                            </excludes>
 						</overlay>
 					</overlays>
 				</configuration>
@@ -97,7 +94,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>3.5.6</version>
+				<version>4.1.0-RC1</version>
 				<configuration>
 					<mainClass>org.apereo.cas.web.CasWebApplication</mainClass>
 					<excludes>
