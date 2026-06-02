@@ -7,5 +7,6 @@
   "bypassApprovalPrompt": true,
   "scopes" : [ "java.util.HashSet",
     [ "openid", "email", "profile" ]
-  ]
+  ],
+  "logoutType": "FRONT_CHANNEL"
 }
