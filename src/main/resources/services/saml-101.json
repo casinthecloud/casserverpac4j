@@ -4,5 +4,7 @@
   "name" : "A SAML CAS server SP (localhost:8080)",
   "id" : 101,
   "metadataLocation" : "./src/main/resources/static/public/sp-metadata-8080-localhost.xml",
-  "logoutType": "FRONT_CHANNEL"
+  "logoutType": "FRONT_CHANNEL",
+  "signLogoutRequest": false,
+  "signLogoutResponse": false
 }
