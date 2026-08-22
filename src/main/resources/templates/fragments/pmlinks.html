@@ -11,17 +11,68 @@
 </head>
 
 <body>
-<div th:fragment="pmlinks" id="pmlinks"  style="background-color: #ffd511; padding: 10px">
-    <b>This CAS server is meant to test the integration of the pac4j clients via the CAS, SAML and OIDC protocols.<br/>
-        <br/>
-        <u>Accounts</u>: <i>alice/pwd</i>, <i>bob/pwd</i>, login = pwd<br/>
-        <br/>
-        <u>CAS support</u>: [url=<i>https?://.*</i>]<br/>
-        <br/>
-        <u>OIDC support</u>: [id=<i>myclient</i>, secret=<i>mysecret</i>, url=<i>https?://.*</i>], [id=<i>pkceclient</i>, url=<i>https?://.*</i>]<br/>
-        <br/>
-        <u>SAML support</u>: [entityId=<i>http://localhost:8081.*</i>], [entityId=<i>http://localhost:8080/callback.*</i>]<br/>
-    </b>
+<div th:fragment="pmlinks" id="pmlinks" class="pmlinks-panel">
+    <style>
+        .pmlinks-panel {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            border-radius: 6px;
+            padding: .75rem 1rem;
+            margin-top: 1rem;
+            font-size: .875rem;
+            line-height: 1.5;
+            color: #374151;
+        }
+
+        .pmlinks-panel .pmlinks-title {
+            margin: 0 0 .5rem;
+            font-weight: 600;
+            color: #92400e;
+        }
+
+        .pmlinks-panel ul {
+            margin: 0;
+            padding-left: 1.1rem;
+        }
+
+        .pmlinks-panel li {
+            margin-bottom: .35rem;
+        }
+
+        .pmlinks-panel li ul {
+            margin-top: .35rem;
+        }
+
+        .pmlinks-panel .k {
+            color: #6b7280;
+        }
+
+        .pmlinks-panel code {
+            background-color: rgba(0, 0, 0, .06);
+            border-radius: 3px;
+            padding: 0 .3em;
+            font-size: .85em;
+            word-break: break-word;
+        }
+    </style>
+
+    <p class="pmlinks-title">This CAS server is meant to test the integration of the pac4j clients via the CAS, SAML and OIDC protocols.</p>
+    <ul>
+        <li><strong>Accounts</strong>: <code>alice</code> / <code>pwd</code>, <code>bob</code> / <code>pwd</code></li>
+        <li><strong>CAS support</strong>: <span class="k">url:</span> <code>https?://.*</code></li>
+        <li><strong>OIDC support</strong>:
+            <ul>
+                <li><span class="k">id:</span> <code>myclient</code>, <span class="k">secret:</span> <code>mysecret</code>, <span class="k">url:</span> <code>https?://.*</code></li>
+                <li><span class="k">id:</span> <code>pkceclient</code>, <span class="k">url:</span> <code>https?://.*</code></li>
+            </ul>
+        </li>
+        <li><strong>SAML support</strong>:
+            <ul>
+                <li><span class="k">entityId:</span> <code>http://localhost:8081.*</code></li>
+                <li><span class="k">entityId:</span> <code>http://localhost:8080/callback.*</code></li>
+            </ul>
+        </li>
+    </ul>
 </div>
 </body>
 

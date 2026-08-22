@@ -19,6 +19,48 @@
         }
     </style>
 
+    <style>
+        /* Brand logos: side by side on one line, shrinking on small screens */
+        .cas-brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 0.75rem;
+            min-width: 0;
+        }
+
+        .cas-brand a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            min-width: 0;
+            flex: 0 1 auto;
+        }
+
+        header > nav .cas-brand .cas-logo {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        @media screen and (max-width: 767.99px) {
+            .cas-brand {
+                height: 40px;
+                gap: 0.5rem;
+            }
+        }
+
+        @media screen and (max-width: 479.99px) {
+            .cas-brand {
+                height: 32px;
+            }
+        }
+    </style>
+
     <header id="app-bar" class="mdc-top-app-bar mdc-top-app-bar--fixed mdc-elevation--z4 shadow-sm"
             role="banner">
         <nav class="mdc-top-app-bar__row navbar navbar-dark bg-dark">
@@ -31,7 +73,6 @@
                         <a target="_blank" href="https://www.casinthecloud.com/index-en.html">
                             <img class="cas-logo" src="https://www.casinthecloud.com/img/logo/cas_in_the_cloud_logo.png" />
                         </a>
-                        &nbsp;
                         <a target="_blank" href="https://www.pac4j.org">
                             <img class="cas-logo" src="https://www.pac4j.org/img/logo.png" />
                         </a>
