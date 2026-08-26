@@ -7,7 +7,7 @@
 	<version>8.0.1-SNAPSHOT</version>
 
 	<properties>
-		<cas.version>8.0.1.1</cas.version>
+		<cas.version>8.0.1.2</cas.version>
 		<java.version>25</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <lombok.version>1.18.46</lombok.version>
