@@ -20,6 +20,11 @@
     </style>
 
     <style>
+        :root {
+            --cas-brand-height: 86px;
+            --cas-bar-height: 102px;
+        }
+
         .cas-brand {
             display: flex;
             align-items: center;
@@ -27,6 +32,7 @@
             flex-wrap: nowrap;
             gap: 0.75rem;
             min-width: 0;
+            height: var(--cas-brand-height);
         }
 
         .cas-brand a {
@@ -46,16 +52,29 @@
             object-fit: contain;
         }
 
+        header#app-bar .mdc-top-app-bar__row {
+            height: var(--cas-bar-height);
+        }
+
+        body .mdc-top-app-bar--fixed-adjust {
+            padding-top: var(--cas-bar-height);
+        }
+
         @media screen and (max-width: 767.99px) {
+            :root {
+                --cas-brand-height: 72px;
+                --cas-bar-height: 88px;
+            }
+
             .cas-brand {
-                height: 40px;
                 gap: 0.5rem;
             }
         }
 
         @media screen and (max-width: 479.99px) {
-            .cas-brand {
-                height: 32px;
+            :root {
+                --cas-brand-height: 58px;
+                --cas-bar-height: 74px;
             }
         }
     </style>
@@ -70,7 +89,7 @@
                     <div class="cas-brand mx-auto">
                         <h1 class="visually-hidden" th:text="${#strings.defaultString(#cas.theme('cas.theme.name'), 'CAS')}">CAS</h1>
                         <a target="_blank" href="https://www.casinthecloud.com/index-en.html">
-                            <img class="cas-logo" src="https://www.casinthecloud.com/img/logo/cas_in_the_cloud_logo.png" />
+                            <img class="cas-logo" src="https://www.casinthecloud.com/img/logo/new_cas_in_the_cloud_logo.png" />
                         </a>
                         <a target="_blank" href="https://www.pac4j.org">
                             <img class="cas-logo" src="https://www.pac4j.org/img/logo.png" />
