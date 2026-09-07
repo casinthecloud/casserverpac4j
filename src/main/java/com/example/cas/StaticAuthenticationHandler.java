@@ -32,6 +32,7 @@ public class StaticAuthenticationHandler extends AbstractUsernamePasswordAuthent
 
             LOGGER.info("@@@ Login: {}", username);
             val attributes = new HashMap<String, List<Object>>();
+            attributes.put("SubjectNameID", Collections.singletonList(username));
             if ("alice".equals(username)) {
                 attributes.put("given_name", Collections.singletonList("Alice"));
                 attributes.put("family_name", Collections.singletonList("MERVEILLE"));
